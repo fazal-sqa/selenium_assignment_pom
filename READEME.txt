@@ -27,7 +27,7 @@ Software & Tools installation:
 	used. Java is used a programming language in this project. Moreover Project Object Model (pom.xml) is used in order to includes and maintain the
 	required dependcies. 
 
-	a) Clone the code repo: 
+	a) Clone the code repo: https://github.com/fazal-sqa/selenium_assignment_pom.git
 	b) Find a a folder named "chromedriver_win32" within the cloned repo just cut this folder and place it in the C: drive.
 	c) There is file "testng_selenium_assignment.xml" on route directory of project, right click -> Run As -> TestNG Suite
 	d  Chrome browser will open and "Test Case" will be executed successfully.
@@ -48,4 +48,3 @@ Software & Tools installation:
 Thank you!
  
 Regards,
-10Pearls.
