@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="18853" started-at="2020-11-22T19:51:51Z" finished-at="2020-11-22T19:52:10Z">
+  <suite started-at="2020-11-24T13:58:24Z" name="Suite" finished-at="2020-11-24T13:58:32Z" duration-ms="8374">
     <groups>
     </groups>
-    <test name="Test" duration-ms="18853" started-at="2020-11-22T19:51:51Z" finished-at="2020-11-22T19:52:10Z">
+    <test started-at="2020-11-24T13:58:24Z" name="Test" finished-at="2020-11-24T13:58:32Z" duration-ms="8374">
       <class name="com.TestClasses.TestHomePage">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.TestClasses.TestHomePage@66a3ffec]" name="setUp" is-config="true" duration-ms="14927" started-at="2020-11-22T19:51:51Z" finished-at="2020-11-22T19:52:06Z">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.TestClasses.TestHomePage@75f32542]" started-at="2020-11-24T13:58:24Z" name="setUp" finished-at="2020-11-24T13:58:30Z" duration-ms="6697" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TestNavigateToChapter1Page()[pri:0, instance:com.TestClasses.TestHomePage@66a3ffec]" name="TestNavigateToChapter1Page" duration-ms="1374" started-at="2020-11-22T19:52:06Z" finished-at="2020-11-22T19:52:08Z">
+        <test-method signature="testNavigationChapter1ToHomePage()[pri:0, instance:com.TestClasses.TestHomePage@75f32542]" started-at="2020-11-24T13:58:30Z" name="testNavigationChapter1ToHomePage" finished-at="2020-11-24T13:58:31Z" duration-ms="1047" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestNavigateToChapter1Page -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.TestClasses.TestHomePage@66a3ffec]" name="tearDown" is-config="true" duration-ms="2482" started-at="2020-11-22T19:52:08Z" finished-at="2020-11-22T19:52:10Z">
+        </test-method> <!-- testNavigationChapter1ToHomePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.TestClasses.TestHomePage@75f32542]" started-at="2020-11-24T13:58:31Z" name="tearDown" finished-at="2020-11-24T13:58:32Z" duration-ms="616" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

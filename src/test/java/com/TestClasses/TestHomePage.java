@@ -1,68 +1,53 @@
 package com.TestClasses;
 
-import java.io.File;
+import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Condition.*;
+import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
-
-import javax.swing.filechooser.FileSystemView;
-
+import java.util.Properties;
 import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.io.FileHandler;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import com.base.BaseClass;
+import com.codeborne.selenide.Selenide;
 import com.pages.Chapter1Page;
 import com.pages.HomePage;
 
 public class TestHomePage extends BaseClass {
 
-	HomePage ObjSeleniumBegginnerGuide;
+	HomePage ObjHomePage;
 	Chapter1Page ObjChapter1;
 
-	@BeforeMethod
 	@Parameters("browser")
+	@BeforeMethod
+	public void setUp(String browser) throws InterruptedException, Exception {
 
-	public void setUp(String browser) throws InterruptedException {
-
-		initialization(browser);
-
-		ObjSeleniumBegginnerGuide = new HomePage();
+		Properties prop = new Properties();
+		FileInputStream ip = new FileInputStream(
+				"D:\\selenium_assignment_pom-master\\selenium_assignment_pom-master\\src\\main\\java\\config.properties");
+		prop.load(ip);
+		String browserName = prop.getProperty("browser");
+		initialization(browserName);
+		ObjHomePage = new HomePage();
 		ObjChapter1 = new Chapter1Page();
 	}
 
-
 	@Test()
-	public void TestNavigateToChapter1Page() throws InterruptedException, IOException {
+	public void testNavigationChapter1ToHomePage() throws InterruptedException, IOException {
 
-		ObjSeleniumBegginnerGuide.clickLinkChapter1();
-		
+		ObjHomePage.clickLinkChapter1();
 		String actualText = ObjChapter1.verifyText();
-
 		String expectedText = "Assert that this text is on the page";
-
 		Assert.assertEquals(actualText, expectedText, "Text is not correct as required!");
-		
-		
 		ObjChapter1.clickHomeLink();
+		$(By.linkText("Chapter1")).should(appear);
 	}
-
 
 	@AfterMethod
 	public void tearDown() {
-		driver.quit();
+		Selenide.closeWebDriver();
 	}
 }

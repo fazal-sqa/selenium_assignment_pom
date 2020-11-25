@@ -29,15 +29,15 @@
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
-          <img class="collapse-all-icon" src="collapseall.gif">
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Suite">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
               <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\Fazal-Rehman\eclipse-workspace\com.selenium.assignment\testng_selenium_assignment.xml</span>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>D:\selenium_assignment_pom-master\selenium_assignment_pom-master\testng_selenium_assignment.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -101,8 +101,8 @@
                     </span>
                     <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.TestClasses.TestHomePage" hash-for-method="TestNavigateToChapter1Page">TestNavigateToChapter1Page</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.TestClasses.TestHomePage" class="method navigator-link" hash-for-method="testNavigationChapter1ToHomePage">testNavigationChapter1ToHomePage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -125,9 +125,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TestNavigateToChapter1Page">
-                  </a> <!-- TestNavigateToChapter1Page -->
-                  <span class="method-name">TestNavigateToChapter1Page</span>
+                  <a name="testNavigationChapter1ToHomePage">
+                  </a> <!-- testNavigationChapter1ToHomePage -->
+                  <span class="method-name">testNavigationChapter1ToHomePage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,13 +135,13 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Fazal-Rehman\eclipse-workspace\com.selenium.assignment\testng_selenium_assignment.xml</span>
+            <span class="header-content">D:\selenium_assignment_pom-master\selenium_assignment_pom-master\testng_selenium_assignment.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.ExtentReportListner.ExtentReporterNG&quot;/&gt;
   &lt;/listeners&gt;
@@ -190,9 +190,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TestNavigateToChapter1Page')
+data.setCell(0, 1, 'testNavigationChapter1ToHomePage')
 data.setCell(0, 2, 'com.TestClasses.TestHomePage')
-data.setCell(0, 3, 1374);
+data.setCell(0, 3, 1047);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -229,12 +229,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">TestNavigateToChapter1Page</span>
-                <span class="method-start">14928 ms</span>
+                <span class="method-name">testNavigationChapter1ToHomePage</span>
+                <span class="method-start">6697 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16311 ms</span>
+                <span class="method-start">7745 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

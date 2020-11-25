@@ -4,16 +4,13 @@
 
 	<listeners>
 		<listener
-			class-name="com.ExtentReportListner.ExtentReporterNG" />
-
+				class-name="com.ExtentReportListner.ExtentReporterNG" />
 	</listeners>
+	<test name="Test">
+		<parameter name = "browser" value = "chrome"/>
 
-
-  <test name="Test">
-	<parameter name = "browser" value = "chrome"/>
-   
-    <classes>
-      <class name="com.TestClasses.TestHomePage"/>
-    </classes>
-  </test> <!-- Test -->
+		<classes>
+			<class name="com.TestClasses.TestHomePage"/>
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->
